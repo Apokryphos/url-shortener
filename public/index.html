@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>URL Shortener</title>
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+
+    <h2>Redirect</h2>
+    <hr>
+    <p>Redirects to the original URL associated with the specified short URL.</p>
+    <h3>URL</h3>
+    <span class="url">GET https://polar-whiskey.glitch.me/&lt;Short URL&gt;</span>
+
+    <h2>Shorten</h2>
+    <hr>
+    <p>Shortens the specified URL.</p>
+    <p>The specified URL must begin with <span class="url">http://</span> or <span class="url">https://</span>.</p>
+    <p>Response properties will be null if the specified URL is invalid.</p>
+    <h3>URL</h3>
+    <span class="url">GET https://polar-whiskey.glitch.me/shorten/?url=&lt;URL&gt;</span>
+    <h3>Example usage:</h3>
+    <div class="codeblock">
+      <p><span class="url">https://polar-whiskey.glitch.me/shorten/?url=https://www.google.com</span></p>
+    </div>
+    <h3>Example response:</h3>
+    <div class="codeblock">
+      <p>{</p>
+        <p><span class="property">"longUrl"</span>: <span class="value">"http%3A%2F%2Fwww.google.com"</span></p>
+        <p><span class="property">"shortUrl"</span>: <span class="value">"3"</span>,</p>
+      <p>}</p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,54 @@
+body {
+  background-color: #393939;
+  color: #dfdfdf;
+  margin: auto;/*2em;*/
+  width: 50em;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+  color: #f79d5c;
+  text-decoration: none;
+  transition: all ease-in-out 0.33s;
+}
+
+a:hover {
+  border-bottom: 1px solid #f79d5c;
+  color: #f8ae79;
+}
+
+h2 {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+hr {
+  display: block;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 52em;
+  margin: 0 0 2em 0;
+}
+
+.codeblock {
+  background-color: #4b4b4b;
+  border-radius: 0.5em;
+  line-height: 0.5em;
+  padding: 1em;
+  width: 50em;
+}
+
+.property {
+  color: #f0544f;
+  padding-left: 1em;
+}
+
+.value {
+  color: #8da1b9;
+}
+
+.url {
+  color: #f79d5c;
+}
