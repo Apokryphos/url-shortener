@@ -1,8 +1,8 @@
 body {
   background-color: #393939;
   color: #dfdfdf;
-  margin: auto;/*2em;*/
-  width: 50em;
+  margin: 2em;
+  max-width: 50em;
 }
 
 a {
@@ -28,7 +28,7 @@ hr {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  width: 52em;
+  max-width: 52em;
   margin: 0 0 2em 0;
 }
 
@@ -36,8 +36,11 @@ hr {
   background-color: #4b4b4b;
   border-radius: 0.5em;
   line-height: 0.5em;
+  margin-bottom: 1em;
+  max-width: 50em;
+  overflow-x: scroll;
   padding: 1em;
-  width: 50em;
+  white-space: nowrap;
 }
 
 .property {
