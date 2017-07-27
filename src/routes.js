@@ -9,6 +9,12 @@ module.exports = function (app, db) {
 
   app.get('/shorten/', (req, res) => {
 
+    if (!req.query.url) {
+      res.status(400).json({
+        error: "The specified query parameters are invalid.",
+      });
+    }
+
     const longUrl = req.query.url;
 
     if (urlApi.longUrlIsValid(longUrl)) {
