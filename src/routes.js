@@ -22,14 +22,12 @@ module.exports = function (app, db) {
         .catch(err => {
           console.error(err);
           res.status(400).json({
-            longUrl: null,
-            shortUrl: null,
+            error: "An error occured while shortening the URL. Please try again later.",
           });
         });
     } else {
       res.status(400).json({
-        longUrl: null,
-        shortUrl: null,
+        error: "The specified URL is not in an accepted format.",
       });
     }
   });
